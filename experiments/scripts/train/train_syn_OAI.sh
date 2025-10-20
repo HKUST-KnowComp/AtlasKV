@@ -1,0 +1,19 @@
+python train.py 	   --dataset_dir your_dataset_dir \
+					   --model_save_dir your_model_save_dir \
+					   --seed 1607 \
+					   --train_dataset train_synthetic_data_qkv \
+					   --N 120000 \
+					   --B 10 \
+					   --total_steps 20001 \
+					   --encoder_spec OAI \
+					   --use_cached_embd \
+					   --key_embd_src key \
+					   --use_data_aug \
+					   --use_lr_decay \
+					   --sep_query_head \
+					   --lr 1e-4 \
+					   --kb_size 0 \
+					   --kb_token_layer_frequency 3 \
+					   --multi_entities 2 \
+					   --outlier_num -1 \
+                       --hf_token ***

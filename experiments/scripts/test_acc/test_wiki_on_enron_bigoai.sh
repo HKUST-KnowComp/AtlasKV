@@ -1,0 +1,27 @@
+python eval.py standard \
+		--seed 1607 \
+		--exp_config_str atlaskv_llama3.1-8b-instruct-10000step-atlas_wiki_qkv@enron \
+		--dataset_dir your_dataset_dir \
+		--test_dataset enron.json \
+		--llm_base_dir unsloth/Meta-Llama-3.1-8B-Instruct \
+		--model_dir 'your_model_save_dir/AtlasKV_stage1_lr_0.001KBTokenLayerFreq3MultiEntities2KBSize0SepQueryHeadUseDataAugKeyFromkey_BigOAI_train_atlas_wiki_qkv_llama3_step_10000' \
+		--encoder_dir 'your_model_save_dir/AtlasKV_stage1_lr_0.001KBTokenLayerFreq3MultiEntities2KBSize0SepQueryHeadUseDataAugKeyFromkey_BigOAI_train_atlas_wiki_qkv_llama3_step_10000_encoder/encoder.pt' \
+		--save_dir your_result_save_dir \
+		--attn_summary_save_dir your_result_save_dir \
+		--subset_size 10000 \
+		--kb_layer_frequency 3 \
+		--kb_size 60000 \
+		--kb_scale_factor 100 \
+		--no-fancy_instruction \
+		--encoder_spec BigOAI \
+		--llm_type "llama3" \
+		--precomputed_embed_root_keys_path your_dataset_dir/enron_BigOAI_embd_key_root.npy \
+		--precomputed_embed_inter_keys_path your_dataset_dir/enron_BigOAI_embd_key_inter1.npy \
+    	--precomputed_embed_root_c2id_mapping_path your_dataset_dir/enron_BigOAI_embd_key_root_c2id_mapping.json \
+        --precomputed_embed_inter_c2id_mapping_path your_dataset_dir/enron_BigOAI_embd_key_inter1_c2id_mapping.json \
+        --precomputed_embed_root_id2c_mapping_path your_dataset_dir/enron_BigOAI_embd_key_root_id2c_mapping.json \
+        --precomputed_embed_inter_id2c_mapping_path your_dataset_dir/enron_BigOAI_embd_key_inter1_id2c_mapping.json \
+        --precomputed_embed_values_path your_dataset_dir/enron_BigOAI_embd_value.npy \
+    	--precomputed_embed_keys_path your_dataset_dir/enron_BigOAI_embd_key.npy \
+		--batch_size 1 \
+		--use_kg

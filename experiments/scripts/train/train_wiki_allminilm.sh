@@ -1,0 +1,21 @@
+python train.py 	   --dataset_dir your_dataset_dir \
+					   --model_save_dir your_model_save_dir \
+					   --seed 1607 \
+					   --train_dataset train_atlas_wiki_qkv \
+					   --N 20000 \
+					   --B 10 \
+					   --total_steps 10001 \
+					   --encoder_spec all-MiniLM-L6-v2 \
+					   --use_cached_embd \
+					   --key_embd_src key \
+					   --use_data_aug \
+					   --use_lr_decay \
+					   --sep_query_head \
+					   --lr 1e-3 \
+					   --kb_size 0 \
+					   --kb_token_layer_frequency 3 \
+					   --multi_entities 2 \
+					   --outlier_num -1 \
+                       --hf_token *** \
+					   --use_kg \
+					   --projector_type linear

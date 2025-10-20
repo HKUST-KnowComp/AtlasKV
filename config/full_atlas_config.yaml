@@ -1,0 +1,24 @@
+# LLM Configuration
+openai:
+  chat_model: "gpt-4o-mini"
+  api_key: "your_api_key"
+  base_url: "your_base_url"
+
+# Deepseek Configuration
+deepseek:
+  chat_model: "deepseek-chat"
+  api_key: "your_api_key"
+  base_url: "your_base_url"
+
+# KG2KV Configuration
+kg2kv:
+  lkg_dir: "your_lkg_dir"
+  lkg_file: "your_lkg_file"
+  output_folder: "your_output_folder"
+  output_file: "your_output_file.jsonl"
+  if_check: true
+  if_naive: true
+  max_name_tokens: 10
+  max_name_chars: 200
+  max_description_tokens: 100
+  max_description_chars: 2000

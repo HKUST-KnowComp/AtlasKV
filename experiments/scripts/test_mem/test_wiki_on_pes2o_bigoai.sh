@@ -1,0 +1,24 @@
+python eval.py generation \
+		--seed 1607 \
+		--eval_mode kb \
+		--dataset_dir your_dataset_dir \
+		--test_dataset atlas_pes2o_qkv.jsonl \
+		--llm_base_dir unsloth/Meta-Llama-3.1-8B-Instruct \
+		--model_dir 'your_model_save_dir/AtlasKV_stage1_lr_0.001KBTokenLayerFreq3MultiEntities2KBSize0SepQueryHeadUseDataAugKeyFromkey_BigOAI_train_atlas_wiki_qkv_llama3_step_10000' \
+		--encoder_dir 'your_model_save_dir/AtlasKV_stage1_lr_0.001KBTokenLayerFreq3MultiEntities2KBSize0SepQueryHeadUseDataAugKeyFromkey_BigOAI_train_atlas_wiki_qkv_llama3_step_10000_encoder/encoder.pt' \
+		--save_dir './result' \
+		--kb_layer_frequency 3 \
+		--kb_size 100000 \
+		--kb_scale_factor 100 \
+		--no-fancy_instruction \
+		--encoder_spec BigOAI \
+		--llm_type "llama3" \
+		--precomputed_embed_root_keys_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_key_root.npy \
+		--precomputed_embed_inter_keys_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_key_inter1.npy \
+    	--precomputed_embed_root_c2id_mapping_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_key_root_c2id_mapping.json \
+        --precomputed_embed_inter_c2id_mapping_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_key_inter1_c2id_mapping.json \
+        --precomputed_embed_root_id2c_mapping_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_key_root_id2c_mapping.json \
+        --precomputed_embed_inter_id2c_mapping_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_key_inter1_id2c_mapping.json \
+        --precomputed_embed_values_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_value.npy \
+    	--precomputed_embed_keys_path your_dataset_dir/atlas_pes2o_qkv_BigOAI_embd_key.npy \
+		--use_kg

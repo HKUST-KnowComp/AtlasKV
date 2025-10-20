@@ -1,0 +1,26 @@
+# LLM Configuration
+openai:
+  chat_model: "gpt-4o-mini"
+  api_key: "your_api_key"
+  base_url: "your_base_url"
+
+# Deepseek Configuration
+deepseek:
+  chat_model: "deepseek-chat"
+  api_key: "your_api_key"
+  base_url: "your_base_url"
+
+# KG2KV Configuration
+kg2kv:
+  lkg_dir: "your_lkg_dir"
+  lkg_file: "your_lkg_file"
+  # lkg_file: "triple_edges_pes2o_abstract_from_json_without_emb_full_concept.csv"
+  output_folder: "your_output_folder"
+  output_file: "atlas_wiki_qa.jsonl"
+  if_check: true
+  if_naive: true
+  max_tokens: 25
+  min_tokens: 3
+  max_name_tokens: 4
+  max_description_tokens: 20
+  min_description_tokens: 10
