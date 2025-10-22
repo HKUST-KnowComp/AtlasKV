@@ -462,5 +462,13 @@ We gratefully acknowledge the use of the following open-source projects in our w
 If you use AtlasKV in your research, please cite our paper:
 
 ```bibtex
-Comming Soon
+@misc{huang2025atlaskvaugmentingllmsbillionscale,
+      title={AtlasKV: Augmenting LLMs with Billion-Scale Knowledge Graphs in 20GB VRAM}, 
+      author={Haoyu Huang and Hong Ting Tsang and Jiaxin Bai and Xi Peng and Gong Zhang and Yangqiu Song},
+      year={2025},
+      eprint={2510.17934},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2510.17934}, 
+}
 ```
