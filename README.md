@@ -5,7 +5,7 @@
 [![ARXIV](https://img.shields.io/badge/ARXIV-AtlasKV-b31b1b)](https://arxiv.org/abs/2510.17934)
 [![ONE DRIVE](https://img.shields.io/badge/ONE_DRIVE-Model-green.svg)](https://hkustconnect-my.sharepoint.com/:f:/g/personal/hhuangcp_connect_ust_hk/EprEAhMNn5NLh7HGtb05IpQBNIkCA2JKmNB8D5KiAfLj6g?e=6im0jX)
 [![ONE DRIVE](https://img.shields.io/badge/ONE_DRIVE-Data-green.svg)](https://hkustconnect-my.sharepoint.com/:f:/g/personal/hhuangcp_connect_ust_hk/EprEAhMNn5NLh7HGtb05IpQBNIkCA2JKmNB8D5KiAfLj6g?e=6im0jX)
-[![Hugging Face Collections](https://img.shields.io/badge/HUGGING_FACE-Data-ffc107.svg?logo=huggingface)](https://huggingface.co/collections/HaoyuHuang2/atlaskv-68f5b2fb04fbae5be988856f)
+[![Hugging Face Collections](https://img.shields.io/badge/HUGGING_FACE-Collections-ffc107.svg?logo=huggingface)](https://huggingface.co/collections/HaoyuHuang2/atlaskv-68f5b2fb04fbae5be988856f)
 [![PYTHON](https://img.shields.io/badge/PYTHON-3.10+-blue.svg)](https://python.org)
 [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-orange.svg)](LICENSE)
 
